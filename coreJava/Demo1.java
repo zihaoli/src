@@ -10,8 +10,9 @@ public class Demo1 {
 		
 		p2.walk(p2);
 		A a = new A();
+		A a1= new A();
 		
-		System.out.println(a.equals(a));
+		System.out.println(a.equals(a1));
 		
 
 	}
