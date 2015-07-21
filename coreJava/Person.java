@@ -15,9 +15,13 @@ public class Person {
 		this.w = w;
 		this.h = h;
 	}
-	public Person() {
-		
-	}
+	public Person() {}
+	//@Override
+//	public String toString() {
+//		return "Person [age=" + age + ", name=" + name + ", w=" + w + ", h="
+//				+ h + "]";
+//	}
+
 	
 	public void walk(Person p){
 		System.out.println(this.name+" zoulu");
