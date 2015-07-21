@@ -16,11 +16,11 @@ public class Person {
 		this.h = h;
 	}
 	public Person() {}
-	//@Override
-//	public String toString() {
-//		return "Person [age=" + age + ", name=" + name + ", w=" + w + ", h="
-//				+ h + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Person [age=" + age + ", name=" + name + ", w=" + w + ", h="
+				+ h + "]";
+	}
 
 	
 	public void walk(Person p){
