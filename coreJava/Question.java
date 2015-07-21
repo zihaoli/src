@@ -1,15 +1,13 @@
 package coreJava;
 
-
-
 public class Question {
 	private int id;
 	private String title;
 
 	private String[] options;
 
-//	public Question() {
-//	}
+	// public Question() {
+	// }
 
 	public Question(int id, String title, String[] options) {
 		super();
@@ -50,7 +48,7 @@ public class Question {
 	public String toString() {
 		StringBuffer s = new StringBuffer();
 		s.append(id).append(".").append(title).append("\n");
-		for(String v:options){
+		for (String v : options) {
 			s.append(v).append("\n");
 		}
 		return s.toString();
@@ -77,6 +75,5 @@ public class Question {
 			return false;
 		return true;
 	}
-	
 
 }
