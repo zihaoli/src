@@ -1,6 +1,6 @@
 package coreJava;
 
-public class Question {
+public abstract class Question {
 	private int id;
 	private String title;
 
@@ -40,9 +40,7 @@ public class Question {
 		this.options = options;
 	}
 
-	public boolean check(String anwser) {
-		return false;
-	}
+	public abstract boolean check(String anwser) ;
 
 	@Override
 	public String toString() {
