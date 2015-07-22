@@ -40,7 +40,7 @@ public abstract class Question {
 		this.options = options;
 	}
 
-	public abstract boolean check(String anwser) ;
+	public abstract boolean check(String[] anwsers) ;
 
 	@Override
 	public String toString() {
@@ -52,6 +52,19 @@ public abstract class Question {
 		return s.toString();
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
