@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class QuesDemo1 {
 
 	public static void main(String[] args) {
+		
+		//System.out.println(Arrays.toString(new String[]{"a","b","c"}));
 		SingleQuestion q1 = new SingleQuestion(1, "爱情电影是：", new String[] { "A.失落", "B.风雨", "C.权利" }, "A");
 		System.out.print(q1);
 		System.out.println(q1.check(new String[] { "A" }));
