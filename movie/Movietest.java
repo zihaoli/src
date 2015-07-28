@@ -11,9 +11,9 @@ public class Movietest {
 		m3.setMovieCode(Movie.R_MOVIE);
 		
 		Customer c1 = new Customer("уехЩ");
-		Rental r1 = new Rental(m1, 8);
-		Rental r2 = new Rental(m2, 9);
-		Rental r3 = new Rental(m3,9);
+		Rental r1 = new Rental(m1, 1);
+		Rental r2 = new Rental(m2, 1);
+		Rental r3 = new Rental(m3,1);
 		
 		c1.addRental(r1);
 		c1.addRental(r2);

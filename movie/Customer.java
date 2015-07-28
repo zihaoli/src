@@ -2,7 +2,7 @@ package movie;
 
 public class Customer {
 	private String name;
-	private Rental[] rs = new Rental[5];
+	private Rental[] rs = new Rental[5];//ÈÝÆ÷£¬¶à¸ö×âÁÞ
 	private int index = 0;
 
 	public Customer() {
