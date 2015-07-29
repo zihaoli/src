@@ -4,13 +4,11 @@ public class Rental {
 	private Movie movie;//租了哪个电影
 	private int days;
 	public Rental(){}
-	
 	public Rental(Movie movie, int days) {
 		super();
 		this.movie = movie;
 		this.days = days;
 	}
-
 	public Movie getMovie() {
 		return movie;
 	}
@@ -23,6 +21,9 @@ public class Rental {
 	public void setDays(int days) {
 		this.days = days;
 	}
-	
-
+	@Override
+	public String toString() {
+		
+		return movie.getName()+","+ "租了"+this.days+"天";
+	}
 }

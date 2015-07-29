@@ -28,7 +28,7 @@ public class Customer {
 	// 打印金额，积分情况
 	public void printMessage() {
 		double totalprice = 0;
-		double result = 0;
+		//double result = 0;
 		int fre = 0;
 		for (int i = 0; i < index; i++) { // 小于index，因为不是rs全部放满的
 			
