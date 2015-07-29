@@ -1,4 +1,4 @@
-package movie.version2;
+package movie.version3;
 
 public class Customer {
 	private String name;
