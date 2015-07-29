@@ -1,4 +1,4 @@
-package movie.version3;
+package movie.version4;
 
 public class Rental {
 	private Movie movie;//租了哪个电影
