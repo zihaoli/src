@@ -1,4 +1,4 @@
-package movie.version4;
+package movie.version5;
 
 import java.util.Arrays;
 
@@ -29,7 +29,7 @@ public class MyArrayList {
 	public int getIndex() {
 		return index;
 	}
-//==================================迭代器
+//==================================
 	public Iterator iterator(){
 		return new MyIterator();
 	}
@@ -49,7 +49,7 @@ public class MyArrayList {
 			size++;	
 		}
 	}
-//========================================
+
 	/**
 	 * 通过索引下标获取对象
 	 * @param index

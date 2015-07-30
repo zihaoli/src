@@ -1,7 +1,8 @@
-package movie.version4;
+package movie.version5;
 
 public class Movie {
 	private String name;
+	private Price price;
 	private int movieCode;//电影代码
 	public static final int NEW_MOVIE =1 ;//代表新电影
 	public static final int CHILDEN_MOVIE=2;//代表儿童电影
@@ -25,30 +26,19 @@ public class Movie {
 	 * @param rental TODO
 	 * @return
 	 */
-		double getPrice(int days) {
-			double totalprice=0;
+	public 	double getPrice(int days) {
 			switch (this.getMovieCode()) {
 			case Movie.NEW_MOVIE:
-				totalprice += days * 3;
+				price = new Newmovieprice();
 				break;
 			case Movie.CHILDEN_MOVIE:
-				
-				if (days <= 3) {
-					totalprice += 1.5;
-				} else {
-					totalprice += (days - 3) * 1.5 + 1.5;
-				}
+				price = new ChildenMoviePrice();
 				break;
 			case Movie.R_MOVIE:
-				
-				if (days <= 2) {
-					totalprice += 2;
-				} else {
-					totalprice += (days- 2) *2+ 1.5;
-				}
+				price = new RmoviePrice();
 				break;
 			}
-			return totalprice;
+			return price.getprice(days);
 		}
 	/**
 	 * 计算积分
@@ -57,8 +47,6 @@ public class Movie {
 	 */
 		int getFre(int days) {
 			
-			if (this.getMovieCode() == Movie.NEW_MOVIE&&days>1)
-			return 2;
-			return 1;
+		return price.getfre(days);
 		}
 }
